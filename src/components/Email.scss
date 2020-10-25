@@ -1,0 +1,32 @@
+@import '../styles/base.scss';
+
+.inbox__email {
+	font-family: 'SF UI';
+	height: 90px;
+	border-bottom: 1px solid $line-color;
+	padding-top: 4px;
+
+	.email__head {
+		font-weight: 700;
+		font-size: 15px;
+		color: #4c4f59;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		margin-left: -2px;
+	}
+
+	.email__time {
+		font-weight: 600;
+		margin-top: 2px;
+		margin-right: 20px;
+		font-size: 12px;
+		color: #4c4f59;
+	}
+
+	.email__from {
+		font-weight: 600;
+		font-size: 12px;
+		color: #a3a3a8;
+	}
+}

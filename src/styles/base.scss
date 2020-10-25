@@ -1,0 +1,89 @@
+@font-face {
+	font-family: 'SF UI';
+	src: url('../assets/fonts/SF-UI-Display-Regular.otf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'SF UI';
+	src: url('../assets/fonts/SF-UI-Display-Medium.otf');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'SF UI';
+	src: url('../assets/fonts/SF-UI-Display-Semibold.otf');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'SF UI';
+	src: url('../assets/fonts/SF-UI-Display-Bold.otf');
+	font-weight: 700;
+}
+
+$primary-font: 'SF UI';
+$font-color-primary: #fff;
+$font-color-header: #8f929d;
+$font-color-item: #8e8e93;
+
+$bg-container-primary: #379aff;
+$bg-primary: #fff;
+$bg-secondary: #f9f9f9;
+
+$font-size-md: 14px;
+
+$chat-shadow: 0px 5px 50px rgba(26, 55, 220, 0.499);
+$chat-border-radius: 3px;
+
+// $line-color: #d8d8d8;
+// $line-border-color: #8e8e93;
+$line-color: #d8d8d860;
+
+$label-border-width: 2px;
+$label-personal-color: #9200ff;
+$label-clients-color: #ff7100;
+$label-work-color: #d0db00;
+$label-friends-color: #00dcff;
+
+$bg-header: #33495f;
+$app-header: #33495f;
+$app-accent: #00b96e;
+$red-btn: #ff6052;
+$red-btn-border: #e43c2f;
+$yellow-btn: #ffc107;
+$yellow-btn-border: #e29e00;
+$green-btn: #15cc35;
+$green-btn-border: #00ad1b;
+$btn-accent: #00b96e;
+
+$btn-shadow: 0px 0px 15px rgba(7, 156, 95, 0.303);
+
+@mixin button {
+	font-family: $primary-font;
+	font-size: $font-size-md;
+	font-weight: normal;
+	color: $font-color-primary;
+	width: 125px;
+	height: 45px;
+	box-shadow: $btn-shadow;
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	border-radius: 100px;
+}
+
+@mixin invisible-scrollbar {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	& {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+}

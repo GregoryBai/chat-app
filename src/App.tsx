@@ -1,8 +1,13 @@
 import React from 'react'
-import './App.css'
+import './App.scss'
+import Mail from './components/Mail'
 
 function App() {
-	return <div className='App'></div>
+	return (
+		<div className='App'>
+			<Mail />
+		</div>
+	)
 }
 
 export default App

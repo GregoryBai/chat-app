@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+button,
+input,
+select {
+	border: none;
+	outline: none;
+}
+
+@import './styles//base.scss';
+
+.App {
+	background-color: $bg-container-primary;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
