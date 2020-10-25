@@ -21,7 +21,7 @@ const Mail: React.FC<Props> = () => {
 			<div className='mail__body'>
 				<div className='body__left'>
 					<button type='button' className='left__button '>
-						<span className='button__image' />
+						<div className='button__image' />
 						Compose
 					</button>
 
@@ -128,12 +128,80 @@ const Mail: React.FC<Props> = () => {
 						</div>
 					</div>
 					<div className='center__inbox'>
+						{/*
+                     // *   Email Components // 
+    */}
+						<div className='inbox__email'>
+							<div className='email__head'>
+								<p className='email__header'>Design Language</p>
+								<p className='email__time'>08:00 PM</p>
+							</div>
+							<div className='email__body'>
+								<p className='email__from'>Salman Shah</p>
+							</div>
+						</div>
+
+						<div className='inbox__email'>
+							<div className='email__head'>
+								<p className='email__header'>Nextmail New Look</p>
+								<p className='email__time'>11:00 AM</p>
+							</div>
+							<div className='email__body'>
+								<p className='email__from'>Salman Shah</p>
+							</div>
+						</div>
+
+						<div className='inbox__email'>
+							<div className='email__head'>
+								<p className='email__header'>Interview with Shopify </p>
+								<p className='email__time'>12:05 PM</p>
+							</div>
+							<div className='email__body'>
+								<p className='email__from'>Aisha Dialo</p>
+							</div>
+						</div>
+
+						<div className='inbox__email'>
+							<div className='email__head'>
+								<p className='email__header'>Narcos Season 2</p>
+								<p className='email__time'>07:35 PM</p>
+							</div>
+							<div className='email__body'>
+								<p className='email__from'>Netflix</p>
+							</div>
+						</div>
+
+						<div className='inbox__email'>
+							<div className='email__head'>
+								<p className='email__header'>Top Stories of the Day</p>
+								<p className='email__time'>Yesterday</p>
+							</div>
+							<div className='email__body'>
+								<p className='email__from'>TechCrunch</p>
+							</div>
+						</div>
+
+						<div className='inbox__email'>
+							<div className='email__head'>
+								<p className='email__header'>Updates from Kevin</p>
+								<p className='email__time'>Yesterday</p>
+							</div>
+							<div className='email__body'>
+								<p className='email__from'>Goodreads</p>
+							</div>
+						</div>
+
+						<div className='inbox__email'>
+							<div className='email__head'>
+								<p className='email__header'>Startup 2016</p>
+								<p className='email__time'>09 Oct, 16</p>
+							</div>
+							<div className='email__body'>
+								<p className='email__from'>ChangeMe</p>
+							</div>
+						</div>
 						<Email />
-						{Array(10)
-							.fill(5)
-							.map((_, i) => (
-								<Email key={i} />
-							))}
+						<Email />
 					</div>
 				</div>
 				<div className='body__right'>
@@ -155,29 +223,57 @@ const Mail: React.FC<Props> = () => {
 								<img src={userPicture} alt='user ' className='user__picture' />
 								<div className='user__credentials'>
 									<p className='user__name'>Salman Shah</p>
-									<p className='user__email'>shah.salman4@gmaiil.com</p>
+									<span className='user__from'>From: </span>{' '}
+									<span className='user__email'>shah.salman4@gmaiil.com</span>
 								</div>
 							</div>
 							<p className='user__time'>11:00 AM, Today</p>
 						</div>
 
 						<div className='output__body'>
-							<pre className='body__content'>
-								{`Hello Adithya,
+							<p className='body__content'>
+								Hello Adithya,
+								<br />
+								<br />
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+								enim ad minim veniam, quis nostrud exercitation ullamco laboris
+								nisi ut aliquip ex ea commodo consequat.
+								<br />
+								<br />
+								Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident.
+								<br />
+								<br />
+								<br />
+								Cheers
+								<br />
+								DesignAvenger
+							</p>
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-    nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-
-    Cheers
-
-    DesignAvenger
- 
-`}
-							</pre>
+							<div className='body__download'>
+								<div className='download__file'>
+									<p className='file__ext'>PDF</p>
+								</div>
+								<a className='download__link' href='#' download>
+									Sample.pdf
+								</a>
+							</div>
+						</div>
+						<div className='buttons__container'>
+							<button
+								type='button'
+								className='output__button output__button--reply '>
+								<div className='button__image' />
+								Reply
+							</button>
+							<button
+								type='button'
+								className='output__button output__button--forward '>
+								<div className='button__image' />
+								Forward
+							</button>
 						</div>
 					</div>
 				</div>

@@ -1,5 +1,11 @@
 @font-face {
 	font-family: 'SF UI';
+	src: url('../assets/fonts/SF-UI-Display-Light.otf');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'SF UI';
 	src: url('../assets/fonts/SF-UI-Display-Regular.otf');
 	font-weight: normal;
 }
@@ -40,7 +46,7 @@ $chat-border-radius: 3px;
 // $line-border-color: #8e8e93;
 $line-color: #d8d8d860;
 
-$label-border-width: 2px;
+$label-border-width: 3px;
 $label-personal-color: #9200ff;
 $label-clients-color: #ff7100;
 $label-work-color: #d0db00;
@@ -57,7 +63,7 @@ $green-btn: #15cc35;
 $green-btn-border: #00ad1b;
 $btn-accent: #00b96e;
 
-$btn-shadow: 0px 0px 15px rgba(7, 156, 95, 0.303);
+$btn-shadow: 0px 0px 15px rgba(7, 156, 95, 0.203);
 
 @mixin button {
 	font-family: $primary-font;

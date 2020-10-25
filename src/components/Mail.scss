@@ -6,7 +6,7 @@
 	height: 796px;
 	box-shadow: $chat-shadow;
 	border-radius: $chat-border-radius;
-	// overflow: hidden;
+	overflow: hidden;
 }
 
 .mail__header {
@@ -72,10 +72,9 @@
 	background-color: $btn-accent;
 
 	.button__image {
+		background: url('../assets/compose.svg') center center no-repeat;
 		width: 15px;
 		height: 15px;
-		display: block;
-		background: url('../assets/compose.svg') center center no-repeat;
 		background-size: cover;
 		margin-right: 5px;
 	}
@@ -123,8 +122,7 @@
 			margin-left: 1px;
 			// ?
 
-			margin-top: 2px;
-			margin-bottom: 19px;
+			margin-bottom: 20px;
 
 			&--inbox {
 				display: flex;
@@ -246,9 +244,9 @@
 }
 
 .left__user {
-	margin-top: 40px;
+	margin-top: 29px;
 	padding-left: 15px;
-	padding-top: 14px;
+	padding-top: 25px;
 	width: 100%;
 
 	border-top: 1px solid $line-color;
@@ -257,7 +255,7 @@
 	// padding: 12px 15px;
 
 	.user__picture {
-		margin-right: 5px;
+		margin-right: 6px;
 		border-radius: 50%;
 		width: 35px;
 		height: 35px;
@@ -321,7 +319,7 @@
 .center__block {
 	display: flex;
 	justify-content: space-between;
-	margin: 30px 26px;
+	margin: 30px 26px 0 26px;
 }
 
 .block__label {
@@ -350,6 +348,8 @@
 	}
 
 	.block__select {
+		font-family: 'SF UI';
+		font-size: 13px;
 		padding: 0 16px 0 3px;
 		user-select: none;
 		appearance: none;
@@ -365,18 +365,64 @@
 
 .inbox__email {
 	height: 90px;
+	font-family: 'SF UI';
 	border-bottom: 1px solid $line-color;
-	padding-left: 30px;
-}
+	padding: 0px 7px 0px 29px;
 
-.email__head {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 10px;
-}
+	&:nth-child(2) {
+		border-left: 4px solid #379aff;
 
-.email__time {
-	margin-right: 25px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 20px;
+			right: 26px;
+			background-color: #379aff;
+			height: 12px;
+			width: 14px;
+			background: url('../assets/attachments.svg') center center no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.email__head {
+		font-weight: 700;
+		font-size: 15px;
+		color: #4c4f59;
+		display: flex;
+		justify-content: space-between;
+		margin: 24px 0 10px -2px;
+
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 4px;
+			left: -11px;
+			background-color: #379aff;
+			height: 7px;
+			width: 7px;
+			border-radius: 50%;
+		}
+	}
+
+	.email__time {
+		font-weight: 600;
+		// margin-top: 4px;
+		// margin-right: 27px;
+		font-size: 12px;
+		color: #4c4f59;
+	}
+
+	.email__from {
+		margin-top: 13px;
+		font-weight: 600;
+		font-size: 12px;
+		color: #a3a3a8;
+	}
 }
 
 .body__right {
@@ -393,7 +439,7 @@
 	margin-left: 20px;
 
 	.container__item {
-		margin: 30px 0px 30px 10px;
+		margin: 32px 0px 30px 10px;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
@@ -432,9 +478,13 @@
 
 .right__output {
 	padding-left: 24px;
+	font-family: 'SF UI';
 }
 .output__header {
 	margin: 20px 0 22px 0;
+	font-size: 24px;
+	color: #4c4f59;
+	font-weight: 300;
 }
 
 .output__user {
@@ -444,12 +494,18 @@
 	border-bottom: 1px solid $line-color;
 
 	.user__time {
+		font-size: 13px;
+		font-weight: 500;
+		color: #4c4f5930;
+		margin-top: 6px;
 	}
 }
 
 .user__container {
 	display: flex;
-	margin-bottom: 10px;
+	margin-left: 2px;
+	margin-bottom: 23px;
+
 	.user__picture {
 		max-width: 45px;
 		border-radius: 50%;
@@ -457,10 +513,112 @@
 	}
 
 	.user__credentials {
+		.user__name {
+			margin-top: 4px;
+
+			font-size: 18px;
+			font-weight: 500;
+			color: #4c4f59;
+		}
+
+		.user__from {
+			font-size: 12px;
+			font-weight: 600;
+			color: #6b6e7f;
+		}
+		.user__email {
+			margin-left: 2px;
+			font-size: 12px;
+			font-weight: 600;
+			color: #4c4f59;
+		}
 	}
 }
 
-.body__content {
-	font-size: $font-size-md;
-	word-break: break-word;
+.output__body {
+	.body__content {
+		line-height: 170%;
+		margin-left: 2px;
+		margin-right: 24px;
+		padding-bottom: 36px;
+		font-family: 'SF UI';
+		color: #65676e;
+		font-size: $font-size-md;
+		border-bottom: 1px solid $line-color;
+	}
+
+	.body__download {
+		margin-top: 20px;
+		margin-left: 2px;
+		padding: 7px;
+		height: 45px;
+		max-width: 111px;
+		border: 1px solid #8e8e9310;
+		border-radius: 4px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		.download__file {
+			position: relative;
+			width: 26px;
+			height: 30px;
+			background: url('../assets/google_drive_icon.svg') no-repeat center center;
+			background-size: contain;
+
+			.file__ext {
+				position: absolute;
+				bottom: 4px;
+				left: 4px;
+
+				font-size: 8px;
+				color: #fff;
+			}
+		}
+
+		.download__link {
+			margin-right: 15px;
+			font-size: 10px;
+			text-decoration: none;
+			color: #2e2e2e50;
+		}
+	}
+}
+
+.buttons__container {
+	display: flex;
+	margin-top: 39px;
+	margin-left: 3px;
+	.output__button {
+		@include button;
+
+		color: $font-color-primary;
+		background-color: $btn-accent;
+		margin-right: 16px;
+
+		.button__image {
+			margin-top: 1px;
+			width: 15px;
+			height: 15px;
+			background-size: contain;
+			margin-right: 5px;
+		}
+
+		&--reply {
+			.button__image {
+				background: #00b96e url('../assets/reply.svg') no-repeat center center;
+			}
+		}
+
+		&--forward {
+			border: 1px solid #81869f40;
+			background-color: #81869f10;
+			color: #999eb1;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+			.button__image {
+				background: url('../assets/forward.svg') no-repeat center center;
+			}
+		}
+	}
 }
