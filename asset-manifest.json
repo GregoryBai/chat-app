@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/chat-app/static/css/main.bae6f7bb.chunk.css",
+    "main.js": "/chat-app/static/js/main.6722004b.chunk.js",
+    "main.js.map": "/chat-app/static/js/main.6722004b.chunk.js.map",
+    "runtime-main.js": "/chat-app/static/js/runtime-main.64bc14b9.js",
+    "runtime-main.js.map": "/chat-app/static/js/runtime-main.64bc14b9.js.map",
+    "static/js/2.8956c264.chunk.js": "/chat-app/static/js/2.8956c264.chunk.js",
+    "static/js/2.8956c264.chunk.js.map": "/chat-app/static/js/2.8956c264.chunk.js.map",
+    "static/js/3.8eaa8817.chunk.js": "/chat-app/static/js/3.8eaa8817.chunk.js",
+    "static/js/3.8eaa8817.chunk.js.map": "/chat-app/static/js/3.8eaa8817.chunk.js.map",
+    "index.html": "/chat-app/index.html",
+    "static/css/main.bae6f7bb.chunk.css.map": "/chat-app/static/css/main.bae6f7bb.chunk.css.map",
+    "static/js/2.8956c264.chunk.js.LICENSE.txt": "/chat-app/static/js/2.8956c264.chunk.js.LICENSE.txt",
+    "static/media/Email.scss": "/chat-app/static/media/SF-UI-Display-Semibold.99450184.otf",
+    "static/media/Mail.scss": "/chat-app/static/media/unread.e628d52a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64bc14b9.js",
+    "static/js/2.8956c264.chunk.js",
+    "static/css/main.bae6f7bb.chunk.css",
+    "static/js/main.6722004b.chunk.js"
+  ]
+}
